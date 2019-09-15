@@ -1,0 +1,43 @@
+{
+  "name": "angular-skitter",
+  "version": "1.0.3",
+  "homepage": "www.karimabdelcadir.com",
+  "description": "slider directive for angular based on jQuery Skitter",
+  "authors": [
+    "Karim Abdelcadir <kinotto88@yahoo.it>",
+    "Stefano Vollono <stefanovollono@gmail.com>"
+  ],
+  "main": "src/skitter.directive.js",
+  "keywords": [
+    "angular skitter",
+    "skitter",
+    "jQuery slider",
+    "slideshow",
+    "angular",
+    "jQuery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "jquery": "^3.2.1",
+    "jquery-easing": "*",
+    "skitter-slideshow": "skitter#^5.0.3"
+  },
+  "_release": "1.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.3",
+    "commit": "a58bae9efc8ab985c91e768c7cb4d934df6889d7"
+  },
+  "_source": "https://github.com/kinotto/angular-skitter.git",
+  "_target": "^1.0.3",
+  "_originalSource": "angular-skitter",
+  "_direct": true
+}
