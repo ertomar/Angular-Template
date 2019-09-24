@@ -21,9 +21,9 @@
             "aot": false,
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/font-awesome/css/font-awesome.css",
-              "src/styles.css"
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/font-awesome/scss/font-awesome.scss",
+              "src/styles.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -118,5 +118,10 @@
       }
     }
   },
-  "defaultProject": "Heilo"
+  "defaultProject": "Heilo",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

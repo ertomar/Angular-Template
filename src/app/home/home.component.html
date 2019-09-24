@@ -1,3 +1,4 @@
+<!-- <div class="black-overlay"></div> -->
 <section class="slide-show">
   <article id="slideOne">
     <div class="caption">
@@ -42,4 +43,112 @@
     </ul>
   </div>
 </section>
-<section class="test"></section>
+<section class="two-Boxes">
+  <div class="boxes-container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="box" id="boxOne">
+          <div class="image w-100">
+            <img class="img-fluid" src="../../assets/images/pic02.jpg" alt="" />
+          </div>
+          <div class="content">
+            <header class="align-center">
+              <p>maecenas sapien feugiat ex purus</p>
+              <h2>Lorem ipsum dolor</h2>
+            </header>
+            <p>
+              Cras aliquet urna ut sapien tincidunt, quis malesuada elit
+              facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a
+              libero pharetra elementum. Maecenas feugiat ex purus, quis
+              volutpat lacus placerat malesuada.
+            </p>
+            <footer class="align-center">
+              <a href="#" class="button alt">Learn More</a>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box" id="boxTwo">
+          <div class="image w-100">
+            <img class="img-fluid" src="../../assets/images/pic03.jpg" alt="" />
+          </div>
+          <div class="content">
+            <header class="align-center">
+              <p>maecenas sapien feugiat ex purus</p>
+              <h2>Vestibulum sit amet</h2>
+            </header>
+            <p>
+              Cras aliquet urna ut sapien tincidunt, quis malesuada elit
+              facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a
+              libero pharetra elementum. Maecenas feugiat ex purus, quis
+              volutpat lacus placerat malesuada.
+            </p>
+            <footer class="align-center">
+              <a href="#" class="button alt">Learn More</a>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section
+  class="fixed-background d-flex justify-content-center align-items-center"
+>
+  <div class="inner">
+    <header class="text-center">
+      <p>
+        Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna
+      </p>
+      <h2>Morbi maximus justo</h2>
+    </header>
+  </div>
+</section>
+<section class="four-pictures">
+  <div class="header">
+    <p>
+      Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna
+    </p>
+    <h2>Morbi maximus justo</h2>
+  </div>
+  <div class="gallery my-5">
+    <div class="gallery-container px-5">
+      <div class="row">
+        <div class="col-md-6" *ngFor="let number of [1, 2, 3, 4]">
+          <div>
+            <div class="gallery-image p-3 mb-4">
+              <a href="#"
+                ><img
+                  class="img-fluid w-100"
+                  src="../../assets/images/pic0{{ number }}.jpg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer">
+  <div class="container">
+    <ul class="icons list-unstyled d-flex flex-row justify-content-center">
+      <li>
+        <a href="#"><fa name="twitter"></fa></a>
+      </li>
+      <li>
+        <a href="#"><fa name="facebook"></fa></a>
+      </li>
+      <li>
+        <a href="#"><fa name="instagram"></fa> </a>
+      </li>
+      <li>
+        <a href="#"><fa name="envelope"></fa></a>
+      </li>
+    </ul>
+  </div>
+  <div class="copyright">
+    © Untitled. All rights reserved.
+  </div>
+</footer>

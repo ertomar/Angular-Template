@@ -3,7 +3,7 @@ import { Component, OnInit, ViewChild } from "@angular/core";
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.css"]
+  styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit {
   imageUrlArray = [
@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     let i = 0;
+    $("body").fadeIn(1500);
     //Whighten The first dot.
     $(".slide-show .indicator-dots ul li span")
       .eq(0)
@@ -67,5 +68,23 @@ export class HomeComponent implements OnInit {
         .eq(i)
         .fadeIn(500);
     }
+    let twoBoxesOffset = $(".two-Boxes").offset().top;
+    $(window).scroll(function() {
+      let scrolledFromTop = $(window).scrollTop();
+      if (scrolledFromTop > twoBoxesOffset) {
+        $(".navbar-section").css({
+          position: "fixed",
+          backgroundColor: "rgba(0, 0, 0, 0.975)"
+        });
+        $("#topNavbar").css({
+          paddingTop: "8px"
+        });
+      } else {
+        $(".navbar-section").css({
+          position: "absolute",
+          backgroundColor: "transparent"
+        });
+      }
+    });
   }
 }
