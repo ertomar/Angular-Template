@@ -1,5 +1,8 @@
 # Heilo
+This is a very Cool Template designed from scratch.
 
+ This Project has a nice slider made without using any plugins.
+  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
 
 ## Development server
